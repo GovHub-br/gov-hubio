@@ -2,6 +2,9 @@
 module.exports = {
   content: [
     "index.html",
+    "sobre.html",
+    "quem-somos.html",
+    "como-usar.html",
     "./src/**/*.{js,ts,jsx,tsx,html}",  // 👈 Para pegar classes usadas no src
     "./node_modules/flowbite/**/*.js"
   ],
