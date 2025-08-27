@@ -1,0 +1,16 @@
+@layer components {
+  /* underline animado (desktop) */
+  .link-underline { position: relative; }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: width .2s ease;
+  }
+  .link-underline:hover::after,
+  .link-underline:focus-visible::after { width: 100%; }
+}
