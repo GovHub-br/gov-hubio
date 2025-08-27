@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/main-BbUsACxa.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-C0kCxC2l.css">
+  <script type="module" crossorigin src="./assets/main-CyGbpvTm.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BcFbrcBL.css">
 </head>
 
 <body class="min-h-screen flex flex-col">
@@ -35,7 +35,7 @@
           aria-label="GovHub – Início"
         >
           <img
-            src="/hero/logos/logo.svg"
+            src="home/hero/logos/logo.svg"
             alt="GovHub"
             class="block w-[165px] h-[40px] select-none"
           />
@@ -105,7 +105,7 @@
                    hover:scale-110 hover:opacity-90 focus:outline-none
                    focus:ring-2 focus:ring-white/50 rounded"
           >
-            <img src="/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
+            <img src="home/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
           </a>
           <a
             href="https://github.com/GovHub-br"
@@ -114,7 +114,7 @@
                    hover:scale-110 hover:opacity-90 focus:outline-none
                    focus:ring-2 focus:ring-white/50 rounded"
           >
-            <img src="/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
+            <img src="home/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
           </a>
 
           <!-- Botão hambúrguer (à direita) -->
@@ -179,14 +179,14 @@
                 aria-label="Instagram"
                 class="inline-flex items-center justify-center w-8 h-8 transition hover:scale-110 hover:opacity-90"
               >
-                <img src="/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
+                <img src="hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
               </a>
               <a
                 href="https://github.com/GovHub-br"
                 aria-label="GitHub"
                 class="inline-flex items-center justify-center w-8 h-8 transition hover:scale-110 hover:opacity-90"
               >
-                <img src="/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
+                <img src="hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
               </a>
             </div>
           </div>
@@ -197,7 +197,450 @@
 
   <!-- CONTEÚDO -->
   <main class="flex-1">
-    <p>sobre </p>
+
+    <!-- HERO: Sobre -->
+    <section id="sobre-hero" class="w-full">
+      <div class="relative overflow-hidden">
+        <!-- BG: imagem cobre toda a área -->
+        <img
+          src="sobre/hero/bg-sobre-hero.svg"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
+          loading="eager" decoding="async"
+        />
+
+        <!-- Conteúdo -->
+        <div class="relative">
+          <div class="mx-auto w-full max-w-[1440px] h-[240px] sm:h-[300px] md:h-[358px] lg:h-[420px] xl:h-[460px] px-[10px]">
+            <!-- Mobile: centralizado; md+: respeita offsets do Figma -->
+            <div class="h-full flex items-center md:items-start">
+              <h1
+                class="font-inter font-normal text-white leading-[1.05]
+                      text-[32px] sm:text-[44px] md:text-[56px] lg:text-[72px]
+                      md:mt-[100px] md:pl-[0px]"
+              >
+                Sobre o Gov hub
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Propósito (Por que existe?) -->
+    <section id="proposito" class="w-full bg-[#F7F7F8]">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px]">
+        <!-- mobile = coluna invertida | md+ = grid normal -->
+        <div class="flex flex-col-reverse md:grid md:grid-cols-12 items-center gap-x-5 py-14 md:py-[100px]">
+
+          <!-- Imagem (esquerda no desktop, embaixo no mobile) -->
+          <div class="md:col-span-6">
+            <figure class="w-full max-w-[700px] mx-auto md:mx-0">
+              <img
+                src="sobre/proposito/Image.svg"
+                alt="Mockups ilustrando o GovHub"
+                class="block w-full h-auto select-none"
+                loading="lazy" decoding="async"
+              />
+            </figure>
+          </div>
+
+          <!-- Texto (direita no desktop, em cima no mobile) -->
+          <div class="md:col-span-6">
+            <div class="max-w-[620px] md:ml-5">
+              <h2 class="font-inter font-bold text-[#7A34F3]
+                        text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1]">
+                Porque existe?
+              </h2>
+              <p class="mt-4 font-inter text-[16px] md:text-[18px] leading-[1.6] text-[#031E21]/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl,
+                efficitur vitae magna vel, efficitur rhoncus urna. Aliquam efficitur iaculis
+                ex, a mollis mi ornare a.
+              </p>
+
+              <div class="mt-10 md:mt-[72px]">
+                <h3 class="font-inter font-bold text-[#7A34F3]
+                          text-[26px] sm:text-[34px] md:text-[44px] leading-[1.1]">
+                  O que tem de diferente?
+                </h3>
+                <p class="mt-4 font-inter text-[16px] md:text-[18px] leading-[1.6] text-[#031E21]/80">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl,
+                  efficitur vitae magna vel, efficitur rhoncus urna. Aliquam efficitur iaculis
+                  ex, a mollis mi ornare a.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+    
+    <!-- SECTION: Tecnologias e Requisitos -->
+    <section id="tecnologias" class="w-full bg-white">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-12 md:py-[100px]">
+        <div class="grid md:grid-cols-12 gap-x-6 lg:gap-x-10 gap-y-10">
+
+          <!-- Coluna ESQ -->
+          <div class="md:col-span-6">
+            <!-- Wrapper referência -->
+            <div class="relative inline-block isolate">
+              <!-- Elipse atrás do título -->
+              <!--
+              <img
+                src="sobre/tecnologias/elipse.svg"
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none select-none
+                      absolute -z-10
+                      top-[-28px] left-[-24px] w-[180px] opacity-60
+                      sm:top-[-36px] sm:left-[-28px] sm:w-[200px]
+                      md:top-[-44px] md:left-[-36px] md:w-[240px] md:opacity-70
+                      lg:top-[-56px] lg:left-[-48px] lg:w-[280px]"
+              />
+              -->
+
+              <!-- Título por cima -->
+              <h2 class="relative z-10 font-inter font-bold text-[#031E21]
+                        text-[26px] sm:text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1]">
+                Tecnologias utilizadas
+              </h2>
+            </div>
+
+            <p class="mt-4 md:mt-5 max-w-[726px] font-inter
+                      text-[15px] sm:text-[16px] md:text-[18px]
+                      leading-[1.7] text-[#031E21]/80">
+              O projeto adota um stack tecnológico baseado em soluções open-source,
+              incluindo Apache Airflow para orquestração de pipelines de dados, DBT
+              para transformação e modelagem de informações, Apache Superset para
+              visualização e exploração, PostgreSQL como banco de dados relacional e
+              Docker para containerização e implantação. A escolha dessas tecnologias
+              permite maior flexibilidade, escalabilidade e integração com diferentes
+              sistemas governamentais.
+            </p>
+          </div>
+
+          <!-- Coluna DIR -->
+          <div class="md:col-span-6">
+            <h3 class="font-inter font-bold text-[#031E21]
+                      text-[22px] sm:text-[26px] md:text-[30px] lg:text-[32px] leading-[1.1]">
+              Lista de requisitos
+            </h3>
+
+            <ul class="mt-6 space-y-7 lg:space-y-9 max-w-[620px]">
+
+              <!-- Item -->
+              <li>
+                <p class="font-inter font-bold text-[11px] sm:text-[12px]
+                          tracking-[0.06em] uppercase text-[#031E21]">
+                  Orquestração de pipelines de dados
+                </p>
+                <a href="#"
+                  class="group inline-flex items-center gap-2 mt-1
+                          font-inter text-[17px] sm:text-[18px] md:text-[20px]
+                          font-semibold text-[#7A34F3]">
+                  Apache Airflow
+                  <svg aria-hidden="true" viewBox="0 0 24 24"
+                      class="w-5 h-5 transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h12m0 0-5-5m5 5-5 5"
+                          fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <p class="font-inter font-bold text-[11px] sm:text-[12px]
+                          tracking-[0.06em] uppercase text-[#031E21]">
+                  Transformação e modelagem de dados
+                </p>
+                <a href="#"
+                  class="group inline-flex items-center gap-2 mt-1
+                          font-inter text-[17px] sm:text-[18px] md:text-[20px]
+                          font-semibold text-[#7A34F3]">
+                  Data Build Tool
+                  <svg aria-hidden="true" viewBox="0 0 24 24"
+                      class="w-5 h-5 transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h12m0 0-5-5m5 5-5 5"
+                          fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <p class="font-inter font-bold text-[11px] sm:text-[12px]
+                          tracking-[0.06em] uppercase text-[#031E21]">
+                  Visualização e exploração de dados
+                </p>
+                <a href="#"
+                  class="group inline-flex items-center gap-2 mt-1
+                          font-inter text-[17px] sm:text-[18px] md:text-[20px]
+                          font-semibold text-[#7A34F3]">
+                  Apache Superset
+                  <svg aria-hidden="true" viewBox="0 0 24 24"
+                      class="w-5 h-5 transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h12m0 0-5-5m5 5-5 5"
+                          fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <p class="font-inter font-bold text-[11px] sm:text-[12px]
+                          tracking-[0.06em] uppercase text-[#031E21]">
+                  Banco de dados relacional
+                </p>
+                <a href="#"
+                  class="group inline-flex items-center gap-2 mt-1
+                          font-inter text-[17px] sm:text-[18px] md:text-[20px]
+                          font-semibold text-[#7A34F3]">
+                  PostgreSQL
+                  <svg aria-hidden="true" viewBox="0 0 24 24"
+                      class="w-5 h-5 transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h12m0 0-5-5m5 5-5 5"
+                          fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <p class="font-inter font-bold text-[11px] sm:text-[12px]
+                          tracking-[0.06em] uppercase text-[#031E21]">
+                  Containerização e implantação de aplicações
+                </p>
+                <a href="#"
+                  class="group inline-flex items-center gap-2 mt-1
+                          font-inter text-[17px] sm:text-[18px] md:text-[20px]
+                          font-semibold text-[#7A34F3]">
+                  Docker
+                  <svg aria-hidden="true" viewBox="0 0 24 24"
+                      class="w-5 h-5 transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h12m0 0-5-5m5 5-5 5"
+                          fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Requisitos Mínimos -->
+    <section id="requisitos-minimos" class="w-full bg-white">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-16 md:py-[100px]">
+        <div class="grid md:grid-cols-12 gap-x-6 lg:gap-x-10 gap-y-10">
+
+          <!-- Coluna ESQ: Título + texto -->
+          <div class="md:col-span-6">
+            <h2 class="font-inter font-bold text-[#031E21]
+                      text-[26px] sm:text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1]">
+              Requisitos Mínimos de uso
+            </h2>
+            <p class="mt-4 md:mt-5 max-w-[680px] font-inter
+                      text-[15px] sm:text-[16px] md:text-[18px]
+                      leading-[1.7] text-[#031E21]/80">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl, 
+              efficitur vitae magna vel, efficitur rhoncus urna. Aliquam efficitur 
+              iaculis ex, a mollis mi ornare a.
+            </p>
+          </div>
+
+          <!-- Coluna DIR: Lista -->
+          <div class="md:col-span-6">
+            <h3 class="font-inter font-bold text-[#031E21]
+                      text-[22px] sm:text-[26px] md:text-[30px] lg:text-[32px] leading-[1.1]">
+              Lista de requisitos
+            </h3>
+
+            <ul class="mt-6 space-y-6 md:space-y-7 lg:space-y-8">
+              <li>
+                <p class="font-inter font-semibold text-[#7A34F3] text-[16px] md:text-[18px]">Requisito 1</p>
+                <p class="font-inter text-[#031E21]/80 text-[15px] md:text-[16px] leading-[1.6]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl.
+                </p>
+              </li>
+              <li>
+                <p class="font-inter font-semibold text-[#7A34F3] text-[16px] md:text-[18px]">Requisito 2</p>
+                <p class="font-inter text-[#031E21]/80 text-[15px] md:text-[16px] leading-[1.6]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl.
+                </p>
+              </li>
+              <li>
+                <p class="font-inter font-semibold text-[#7A34F3] text-[16px] md:text-[18px]">Requisito 3</p>
+                <p class="font-inter text-[#031E21]/80 text-[15px] md:text-[16px] leading-[1.6]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl.
+                </p>
+              </li>
+              <li>
+                <p class="font-inter font-semibold text-[#7A34F3] text-[16px] md:text-[18px]">Requisito 4</p>
+                <p class="font-inter text-[#031E21]/80 text-[15px] md:text-[16px] leading-[1.6]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl.
+                </p>
+              </li>
+              <li>
+                <p class="font-inter font-semibold text-[#7A34F3] text-[16px] md:text-[18px]">Requisito 5</p>
+                <p class="font-inter text-[#031E21]/80 text-[15px] md:text-[16px] leading-[1.6]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Como é construído -->
+    <section id="como-construido" class="w-full bg-[#F7F7F7]">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-16 md:py-[100px]">
+        <div class="max-w-[920px]">
+          <h2 class="font-inter font-bold text-[#7A34F3]
+                    text-[26px] sm:text-[32px] md:text-[40px] lg:text-[44px] leading-[1.2]">
+            Como que é Construído?
+          </h2>
+          <p class="mt-4 md:mt-6 font-inter text-[15px] sm:text-[16px] md:text-[18px]
+                    leading-[1.7] text-[#031E21]/80">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl,
+            efficitur vitae magna vel, efficitur rhoncus urna. Aliquam efficitur
+            iaculis ex, a mollis mi ornare a.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Sistemas Estruturantes -->
+    <section id="sistemas-estruturantes" class="w-full bg-[#F7F7F7]">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-16 md:py-[100px]">
+        <div class="max-w-[920px]">
+          <!-- Título -->
+          <h2 class="font-inter font-bold text-[#7A34F3]
+                    text-[26px] sm:text-[32px] md:text-[40px] lg:text-[44px] leading-[1.2]">
+            Sistemas estruturantes
+          </h2>
+
+          <!-- Parágrafo -->
+          <p class="mt-4 md:mt-6 font-inter text-[15px] sm:text-[16px] md:text-[18px]
+                    leading-[1.7] text-[#031E21]/90">
+            Os sistemas estruturantes são o núcleo operacional do governo federal, projetados para apoiar
+            atividades essenciais de gestão e garantir a padronização e eficiência na administração pública.
+            Eles desempenham um papel fundamental na consolidação, integração e qualificação de dados,
+            tornando-se indispensáveis para a formulação e execução de políticas públicas.
+          </p>
+
+          <!-- Lista -->
+          <div class="mt-6 md:mt-8 font-inter text-[15px] sm:text-[16px] md:text-[18px]
+                      leading-[1.7] text-[#031E21]/90">
+            <p class="mb-2">Para saber mais detalhes como:</p>
+            <ul class="list-disc list-inside space-y-1">
+              <li>O que são os Sistemas Estruturantes;</li>
+              <li>Desafios e Problemas;</li>
+              <li>Soluções e Abordagens do projeto;</li>
+              <li>Benefícios para Administração Pública;</li>
+              <li>e O Futuro dos Sistemas;</li>
+            </ul>
+          </div>
+
+          <!-- CTA -->
+          <div class="mt-8">
+            <a href="#"
+              class="group inline-flex items-center gap-2 font-inter font-semibold
+                      text-[#7A34F3] text-[15px] sm:text-[16px] md:text-[18px]">
+              BAIXE AGORA NOSSO PDF
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="w-5 h-5 transition-transform group-hover:translate-x-1">
+                <path d="M5 12h12m0 0-5-5m5 5-5 5"
+                      fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Gestão orientada a dados -->
+    <section id="gestao-dados" class="w-full bg-[#F7F7F7]">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-16 md:py-[100px]">
+        <div class="max-w-[920px]">
+          <!-- Título -->
+          <h2 class="font-inter font-bold text-[#7A34F3]
+                    text-[26px] sm:text-[32px] md:text-[40px] lg:text-[44px] leading-[1.2]">
+            Gestão orientada a dados
+          </h2>
+
+          <!-- Subtítulo -->
+          <h3 class="mt-2 font-inter font-semibold text-[#031E21]
+                    text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-[1.3]">
+            Transformando Decisões no Setor Público
+          </h3>
+
+          <!-- Parágrafo -->
+          <p class="mt-4 md:mt-6 font-inter text-[15px] sm:text-[16px] md:text-[18px]
+                    leading-[1.7] text-[#031E21]/90">
+            A gestão orientada a dados é uma abordagem estratégica que reconhece os dados como um dos ativos
+            mais valiosos para a tomada de decisão. No contexto do setor público, essa prática tem o potencial
+            de revolucionar a formulação e implementação de políticas públicas, garantindo eficiência,
+            transparência e responsabilidade.
+          </p>
+
+          <!-- CTA -->
+          <div class="mt-8">
+            <a href="#"
+              class="group inline-flex items-center gap-2 font-inter font-semibold
+                      text-[#7A34F3] text-[15px] sm:text-[16px] md:text-[18px]">
+              BAIXE AGORA NOSSO PDF
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="w-5 h-5 transition-transform group-hover:translate-x-1">
+                <path d="M5 12h12m0 0-5-5m5 5-5 5"
+                      fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Licença de Uso -->
+    <section id="licenca-uso" class="w-full bg-[#7A34F3]">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-16 md:py-[100px]">
+        <div class="max-w-[920px]">
+          <!-- Título -->
+          <h2 class="font-inter font-bold text-white
+                    text-[26px] sm:text-[32px] md:text-[40px] lg:text-[44px] leading-[1.2]">
+            Licença de Uso
+          </h2>
+
+          <!-- Parágrafo -->
+          <p class="mt-4 md:mt-6 font-inter text-[15px] sm:text-[16px] md:text-[18px]
+                    leading-[1.7] text-white/80">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl,
+            efficitur vitae magna vel, efficitur rhoncus urna. Aliquam efficitur
+            iaculis ex, a mollis mi ornare a.
+          </p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
