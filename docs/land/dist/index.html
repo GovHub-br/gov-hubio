@@ -9,49 +9,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
   <!-- Inter 400, 600, 700 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    .font-inter { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, 'Noto Sans', 'Helvetica Neue', sans-serif; }
-
-    /* underline animado (desktop) */
-    .link-underline { position: relative; }
-    .link-underline::after {
-      content: ""; position: absolute; left: 0; bottom: -4px;
-      width: 0; height: 2px; background: rgba(255,255,255,.9);
-      transition: width .2s ease;
-    }
-    .link-underline:hover::after,
-    .link-underline:focus-visible::after { width: 100%; }
-
-    /* transições suaves */
-    .t { transition: all .2s ease; }
-
-    @media (min-width: 1024px) {
-    /* deslocamento horizontal da imagem (desktop) */
-    .hero-img-shift {
-      transform: translateX(var(--hero-img-x, 85px));
-    }
-    /* posição e altura do painel (desktop) */
-    .hero-panel-pos {
-      position: absolute;
-      left: var(--hero-panel-left, 850px);
-      bottom: var(--hero-panel-bottom, 0px);
-      height: 434px;
-    }
-  }
-  /* Fundo: cola no rodapé da seção */
-#ebook .ebook-bg{
-  background: url('ebook/bg.svg') center bottom / cover no-repeat #F19F42;
-}
-
-  </style>
-  <script type="module" crossorigin src="./assets/main-D2WBorV4.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BwNgwSgo.css">
+<<<<<<< HEAD
+  <script type="module" crossorigin src="./assets/main-BbUsACxa.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-C0kCxC2l.css">
+=======
+  <script type="module" crossorigin src="./assets/main-CyGbpvTm.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BcFbrcBL.css">
+>>>>>>> a2e7ac9e (feat(sobre-page): implementa página completa com novas sections)
 </head>
+
 <body class="min-h-screen flex flex-col">
 
   <!-- HEADER -->
@@ -69,7 +40,7 @@
           aria-label="GovHub – Início"
         >
           <img
-            src="./hero/logos/logo.svg"
+            src="home/hero/logos/logo.svg"
             alt="GovHub"
             class="block w-[165px] h-[40px] select-none"
           />
@@ -139,7 +110,7 @@
                    hover:scale-110 hover:opacity-90 focus:outline-none
                    focus:ring-2 focus:ring-white/50 rounded"
           >
-            <img src="./hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
+            <img src="home/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
           </a>
           <a
             href="https://github.com/GovHub-br"
@@ -148,7 +119,7 @@
                    hover:scale-110 hover:opacity-90 focus:outline-none
                    focus:ring-2 focus:ring-white/50 rounded"
           >
-            <img src="./hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
+            <img src="home/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
           </a>
 
           <!-- Botão hambúrguer (à direita) -->
@@ -213,14 +184,14 @@
                 aria-label="Instagram"
                 class="inline-flex items-center justify-center w-8 h-8 transition hover:scale-110 hover:opacity-90"
               >
-                <img src="./hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
+                <img src="home/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
               </a>
               <a
                 href="https://github.com/GovHub-br"
                 aria-label="GitHub"
                 class="inline-flex items-center justify-center w-8 h-8 transition hover:scale-110 hover:opacity-90"
               >
-                <img src="./hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
+                <img src="home/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
               </a>
             </div>
           </div>
@@ -237,7 +208,7 @@
       <div class="w-full bg-[#7A34F3]">
         <div
           class="relative w-full bg-no-repeat bg-cover bg-top min-h-[clamp(420px,60vh,720px)] overflow-hidden"
-          style="background-image:url('hero/hero_bg.png');"
+          style="background-image:url('/hero/hero_bg.png');"
         >
           <!-- Conteúdo limitado a 1440px -->
           <div class="mx-auto max-w-[1440px] h-full px-[10px]">
@@ -250,7 +221,7 @@
                   <!-- Imagem A (visível) | ajuste horizontal em --hero-img-x -->
                   <img
                     id="heroVizA"
-                    src="hero/contrato_comprasnet_tesourogerencial.svg"
+                    src="home/hero/contrato_comprasnet_tesourogerencial.svg"
                     alt="Contratos Comprasnet x Tesouro Gerencial"
                     class="block w-full select-none rounded-xl shadow-[0_12px_40px_rgba(0,0,0,0.25)] opacity-100
                           transition-opacity duration-500 ease-out will-change-[opacity] hero-img-shift"
@@ -260,7 +231,7 @@
                   <!-- Imagem B (oculta) | mantenha o mesmo deslocamento -->
                   <img
                     id="heroVizB"
-                    src="hero/contrato_comprasnet_tesourogerencial.svg"
+                    src="home/hero/contrato_comprasnet_tesourogerencial.svg"
                     alt=""
                     aria-hidden="true"
                     class="absolute inset-0 w-full select-none rounded-xl shadow-[0_12px_40px_rgba(0,0,0,0.25)] opacity-0
@@ -290,7 +261,7 @@
                           <button
                             type="button"
                             data-hero-tab
-                            data-src="hero/contrato_comprasnet_tesourogerencial.svg"
+                            data-src="home/hero/contrato_comprasnet_tesourogerencial.svg"
                             class="w-full text-left px-4 py-2.5 rounded-lg bg-white text-[#374151]
                                   ring-offset-2 ring-offset-white ring-2 ring-[#7A34F3] font-bold
                                   transition hover:bg-white/90
@@ -302,7 +273,7 @@
                           <button
                             type="button"
                             data-hero-tab
-                            data-src="hero/contrato_comprasnet_tesourogerencial_frio.PNG"
+                            data-src="home/hero/contrato_comprasnet_tesourogerencial_frio.PNG"
                             class="w-full text-left px-4 py-2.5 rounded-lg bg-white text-[#374151]
                                   ring-offset-2 ring-offset-white
                                   transition hover:bg-white/90
@@ -314,7 +285,7 @@
                           <button
                             type="button"
                             data-hero-tab
-                            data-src="hero/contrato_comprasnet_tesourogerencial_filme.PNG"
+                            data-src="home/hero/contrato_comprasnet_tesourogerencial_filme.PNG"
                             class="w-full text-left px-4 py-2.5 rounded-lg bg-white text-[#374151]
                                   ring-offset-2 ring-offset-white
                                   transition hover:bg-white/90
@@ -326,7 +297,7 @@
                           <button
                             type="button"
                             data-hero-tab
-                            data-src="hero/contrato_comprasnet_tesourogerencial_vivido.PNG"
+                            data-src="home/hero/contrato_comprasnet_tesourogerencial_vivido.PNG"
                             class="w-full text-left px-4 py-2.5 rounded-lg bg-white text-[#374151]
                                   ring-offset-2 ring-offset-white
                                   transition hover:bg-white/90
@@ -338,7 +309,7 @@
                           <button
                             type="button"
                             data-hero-tab
-                            data-src="hero/contrato_comprasnet_tesourogerencial_preto.PNG"
+                            data-src="home/hero/contrato_comprasnet_tesourogerencial_preto.PNG"
                             class="w-full text-left px-4 py-2.5 rounded-lg bg-white text-[#374151]
                                   ring-offset-2 ring-offset-white
                                   transition hover:bg-white/90
@@ -363,86 +334,85 @@
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- ABOUT / O que é o GovHub (imagem à ESQUERDA no desktop) -->
-<section id="about" class="w-full bg-white">
-  <div class="mx-auto w-full max-w-[1440px] px-[10px]">
-    <div
-      class="grid items-start gap-10 lg:gap-12 py-10 md:py-14 lg:py-16
-             min-h-[560px] md:min-h-[620px] lg:min-h-[680px] lg:grid-cols-12"
-    >
-      <!-- TEXTOS (primeiro no mobile, à DIREITA no desktop) -->
-      <div class="order-1 lg:order-2 lg:col-span-6">
-        <h2 class="font-inter font-bold text-[28px] md:text-[36px] leading-tight text-[#7A34F3]">
-          O que é o Gov Hub?
-        </h2>
+    <section id="about" class="w-full bg-white">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px]">
+        <div
+          class="grid items-start gap-10 lg:gap-12 py-10 md:py-14 lg:py-16
+                min-h-[560px] md:min-h-[620px] lg:min-h-[680px] lg:grid-cols-12"
+        >
+          <!-- TEXTOS (primeiro no mobile, à DIREITA no desktop) -->
+          <div class="order-1 lg:order-2 lg:col-span-6">
+            <h2 class="font-inter font-bold text-[28px] md:text-[36px] leading-tight text-[#7A34F3]">
+              O que é o Gov Hub?
+            </h2>
 
-        <p class="mt-4 text-[16px] leading-[24px] text-[#374151] max-w-[640px]">
-          O GovHub é uma plataforma de software livre desenvolvida para transformar
-          dados brutos em informações estratégicas, apoiando gestores públicos a tomar
-          decisões baseadas em dados.
-        </p>
+            <p class="mt-4 text-[16px] leading-[24px] text-[#374151] max-w-[640px]">
+              O GovHub é uma plataforma de software livre desenvolvida para transformar
+              dados brutos em informações estratégicas, apoiando gestores públicos a tomar
+              decisões baseadas em dados.
+            </p>
 
-        <a href="#"
-           class="inline-flex items-center gap-2 mt-4 font-inter font-bold text-[#7A34F3] hover:underline">
-          Saiba mais
-          <img src="./about/flecha.svg" alt="" class="w-4 h-4" />
-        </a>
+            <a href="#"
+              class="inline-flex items-center gap-2 mt-4 font-inter font-bold text-[#7A34F3] hover:underline">
+              Saiba mais
+              <img src="home/about/flecha.svg" alt="" class="w-4 h-4" />
+            </a>
 
-        <h3 class="mt-8 font-inter font-bold text-[20px] md:text-[22px] leading-tight text-[#111827]">
-          Principais Funcionalidades
-        </h3>
+            <h3 class="mt-8 font-inter font-bold text-[20px] md:text-[22px] leading-tight text-[#111827]">
+              Principais Funcionalidades
+            </h3>
 
-        <p class="mt-2 text-[16px] leading-[24px] text-[#374151] max-w-[720px]">
-          Converta dados dispersos em análises confiáveis e ações estratégicas
-          para impulsionar a gestão pública orientada a dados com:
-        </p>
+            <p class="mt-2 text-[16px] leading-[24px] text-[#374151] max-w-[720px]">
+              Converta dados dispersos em análises confiáveis e ações estratégicas
+              para impulsionar a gestão pública orientada a dados com:
+            </p>
 
-        <ul class="mt-4 space-y-3 text-[16px] leading-[24px] text-[#111827]">
-          <li class="flex items-start gap-3">
-            <svg class="mt-[2px] w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none"
-                 stroke="#7A34F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 6L9 17l-5-5"/>
-            </svg>
-            <span>Integração automatizada e segura dos dados</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="mt-[2px] w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none"
-                 stroke="#7A34F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 6L9 17l-5-5"/>
-            </svg>
-            <span>Governança de dados e transparência</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="mt-[2px] w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none"
-                 stroke="#7A34F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 6L9 17l-5-5"/>
-            </svg>
-            <span>Visualizações personalizáveis e insights estratégicos</span>
-          </li>
-        </ul>
+            <ul class="mt-4 space-y-3 text-[16px] leading-[24px] text-[#111827]">
+              <li class="flex items-start gap-3">
+                <svg class="mt-[2px] w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none"
+                    stroke="#7A34F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span>Integração automatizada e segura dos dados</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-[2px] w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none"
+                    stroke="#7A34F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span>Governança de dados e transparência</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-[2px] w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none"
+                    stroke="#7A34F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span>Visualizações personalizáveis e insights estratégicos</span>
+              </li>
+            </ul>
 
-        <a href="#"
-           class="inline-flex items-center gap-2 mt-6 font-inter font-bold text-[#7A34F3] hover:underline">
-          Saiba mais
-          <img src="./about/flecha.svg" alt="" class="w-4 h-4" />
-        </a>
+            <a href="#"
+              class="inline-flex items-center gap-2 mt-6 font-inter font-bold text-[#7A34F3] hover:underline">
+              Saiba mais
+              <img src="home/about/flecha.svg" alt="" class="w-4 h-4" />
+            </a>
+          </div>
+
+          <!-- IMAGEM / GIF (segundo no mobile, à ESQUERDA no desktop) -->
+          <div class="order-2 lg:order-1 lg:col-span-6 flex justify-center lg:justify-start mt-8 lg:mt-0">
+            <figure class="m-0 p-0 bg-transparent shadow-none rounded-none overflow-visible">
+              <img
+                src="home/about/govhub-about.svg"
+                alt="Animação ilustrando o GovHub"
+                class="block mx-auto w-full max-w-[560px] h-auto select-none"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
       </div>
-
-      <!-- IMAGEM / GIF (segundo no mobile, à ESQUERDA no desktop) -->
-      <div class="order-2 lg:order-1 lg:col-span-6 flex justify-center lg:justify-start mt-8 lg:mt-0">
-        <figure class="m-0 p-0 bg-transparent shadow-none rounded-none overflow-visible">
-          <img
-            src="./about/govhub-about.svg"
-            alt="Animação ilustrando o GovHub"
-            class="block mx-auto w-full max-w-[560px] h-auto select-none"
-            loading="lazy"
-            decoding="async"
-          />
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -484,7 +454,7 @@
           <!-- Imagem (vem depois no mobile e à direita no desktop) -->
           <figure class="lg:col-span-6 flex justify-center lg:justify-end mt-8 lg:mt-0">
             <img
-              src="./sistema/Informaçoes.svg"
+              src="home/sistema/Informa%C3%A7oes.svg"
               alt="Diagrama do GovHub integrando fontes e resultados"
               class="block w-[min(100%,720px)] h-auto select-none"
               loading="lazy"
@@ -499,294 +469,241 @@
 
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
 
-<!-- CLIENTES -->
-<section class="w-full bg-gradient-to-r from-[#7A34F3] to-[#F57F0A] py-20 px-10">
-  <div class="max-w-[1440px] mx-auto">
-    <h2 class="font-inter text-white text-[36px] leading-[1] font-semibold mb-12">
-      Clientes
-    </h2>
+    <!-- CLIENTES -->
+    <section class="w-full bg-gradient-to-r from-[#7A34F3] to-[#F57F0A] py-20 px-10">
+      <div class="max-w-[1440px] mx-auto">
+        <h2 class="font-inter text-white text-[36px] leading-[1] font-semibold mb-12">
+          Clientes
+        </h2>
 
-    <div class="relative">
-      <!-- ESQUERDA -->
-      <button id="clientsPrev"
-        class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2
-               -left-24 lg:left-[-112px]
-               w-12 h-12 lg:w-14 lg:h-14 rounded-full
-               bg-white/25 hover:bg-white/40 backdrop-blur
-               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
-        aria-label="Ver card anterior">
-        <img src="./clients/flecha_esquerda.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
-      </button>
+        <div class="relative">
+          <!-- ESQUERDA -->
+          <button id="clientsPrev"
+            class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2
+                  -left-24 lg:left-[-112px]
+                  w-12 h-12 lg:w-14 lg:h-14 rounded-full
+                  bg-white/25 hover:bg-white/40 backdrop-blur
+                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+            aria-label="Ver card anterior">
+            <img src="home/clients/flecha_esquerda.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
+          </button>
 
-      <!-- Máscara impede sobreposição visual das setas -->
-      <div class="overflow-hidden">
-        <!-- Trilho dos cards -->
-        <div id="clientsRail"
-             class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory"
-             aria-live="polite" aria-label="Depoimentos de clientes">
-          
-          <!-- CARD (link clicável) -->
-          <a href="#" target="_blank" rel="noopener noreferrer"
-             role="article"
-             class="client-card snap-start snap-always bg-[#7A34F3] text-white
-                    w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
-                    transform-gpu transition-transform duration-300 ease-out
-                    hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
-            <img src="./clients/ricardo.svg" alt="Ricardo Silva"
-                 class="w-full h-[307px] object-cover select-none" draggable="false"/>
-            <div class="p-4">
-              <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
-              <p class="mt-2 text-[14px] leading-[20px] opacity-90">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
-              </p>
-              <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
+          <!-- Máscara impede sobreposição visual das setas -->
+          <div class="overflow-hidden">
+            <!-- Trilho dos cards -->
+            <div id="clientsRail"
+                class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory"
+                aria-live="polite" aria-label="Depoimentos de clientes">
+              
+              <!-- CARD (link clicável) -->
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                role="article"
+                class="client-card snap-start snap-always bg-[#7A34F3] text-white
+                        w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
+                        transform-gpu transition-transform duration-300 ease-out
+                        hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+                <img src="home/clients/ricardo.svg" alt="Ricardo Silva"
+                    class="w-full h-[307px] object-cover select-none" draggable="false"/>
+                <div class="p-4">
+                  <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
+                  <p class="mt-2 text-[14px] leading-[20px] opacity-90">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                  </p>
+                  <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
+                </div>
+              </a>
+
+              <!-- Duplique os <a> abaixo para mais cards e ajuste os hrefs -->
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                role="article"
+                class="client-card snap-start snap-always bg-[#7A34F3] text-white
+                        w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
+                        transform-gpu transition-transform duration-300 ease-out
+                        hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+                <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
+                <div class="p-4">
+                  <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
+                  <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                  <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
+                </div>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                role="article"
+                class="client-card snap-start snap-always bg-[#7A34F3] text-white
+                        w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
+                        transform-gpu transition-transform duration-300 ease-out
+                        hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+                <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
+                <div class="p-4">
+                  <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
+                  <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                  <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
+                </div>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                role="article"
+                class="client-card snap-start snap-always bg-[#7A34F3] text-white
+                        w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
+                        transform-gpu transition-transform duration-300 ease-out
+                        hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+                <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
+                <div class="p-4">
+                  <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
+                  <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                  <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
+                </div>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                role="article"
+                class="client-card snap-start snap-always bg-[#7A34F3] text-white
+                        w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
+                        transform-gpu transition-transform duration-300 ease-out
+                        hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+                <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
+                <div class="p-4">
+                  <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
+                  <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                  <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
+                </div>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                role="article"
+                class="client-card snap-start snap-always bg-[#7A34F3] text-white
+                        w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
+                        transform-gpu transition-transform duration-300 ease-out
+                        hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+                <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
+                <div class="p-4">
+                  <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
+                  <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                  <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
+                </div>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                role="article"
+                class="client-card snap-start snap-always bg-[#7A34F3] text-white
+                        w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
+                        transform-gpu transition-transform duration-300 ease-out
+                        hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+                <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
+                <div class="p-4">
+                  <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
+                  <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                  <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
+                </div>
+              </a>
+
             </div>
-          </a>
+          </div>
 
-          <!-- Duplique os <a> abaixo para mais cards e ajuste os hrefs -->
-          <a href="#" target="_blank" rel="noopener noreferrer"
-             role="article"
-             class="client-card snap-start snap-always bg-[#7A34F3] text-white
-                    w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
-                    transform-gpu transition-transform duration-300 ease-out
-                    hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
-            <img src="./clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
-            <div class="p-4">
-              <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
-              <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-              <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
-            </div>
-          </a>
-
-          <a href="#" target="_blank" rel="noopener noreferrer"
-             role="article"
-             class="client-card snap-start snap-always bg-[#7A34F3] text-white
-                    w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
-                    transform-gpu transition-transform duration-300 ease-out
-                    hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
-            <img src="./clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
-            <div class="p-4">
-              <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
-              <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-              <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
-            </div>
-          </a>
-
-          <a href="#" target="_blank" rel="noopener noreferrer"
-             role="article"
-             class="client-card snap-start snap-always bg-[#7A34F3] text-white
-                    w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
-                    transform-gpu transition-transform duration-300 ease-out
-                    hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
-            <img src="./clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
-            <div class="p-4">
-              <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
-              <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-              <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
-            </div>
-          </a>
-
-          <a href="#" target="_blank" rel="noopener noreferrer"
-             role="article"
-             class="client-card snap-start snap-always bg-[#7A34F3] text-white
-                    w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
-                    transform-gpu transition-transform duration-300 ease-out
-                    hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
-            <img src="./clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
-            <div class="p-4">
-              <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
-              <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-              <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
-            </div>
-          </a>
-
-          <a href="#" target="_blank" rel="noopener noreferrer"
-             role="article"
-             class="client-card snap-start snap-always bg-[#7A34F3] text-white
-                    w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
-                    transform-gpu transition-transform duration-300 ease-out
-                    hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
-            <img src="./clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
-            <div class="p-4">
-              <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
-              <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-              <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
-            </div>
-          </a>
-
-          <a href="#" target="_blank" rel="noopener noreferrer"
-             role="article"
-             class="client-card snap-start snap-always bg-[#7A34F3] text-white
-                    w-[268px] h-[425px] rounded-[16px] overflow-hidden flex-shrink-0 block
-                    transform-gpu transition-transform duration-300 ease-out
-                    hover:scale-[1.03] hover:-translate-y-1 hover:drop-shadow-[0_8px_20px_rgba(122,52,243,0.25)]
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
-            <img src="./clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false"/>
-            <div class="p-4">
-              <h3 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h3>
-              <p class="mt-2 text-[14px] leading-[20px] opacity-90">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-              <span class="mt-2 block text-[12px] leading-[15px] opacity-90">Cargo</span>
-            </div>
-          </a>
+          <!-- DIREITA -->
+          <button id="clientsNext"
+            class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2
+                  -right-24 lg:right-[-112px]
+                  w-12 h-12 lg:w-14 lg:h-14 rounded-full
+                  bg-white/25 hover:bg-white/40 backdrop-blur
+                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+            aria-label="Ver próximo card">
+            <img src="home/clients/flecha_direita.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
+          </button>
 
         </div>
       </div>
-
-      <!-- DIREITA -->
-      <button id="clientsNext"
-        class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2
-               -right-24 lg:right-[-112px]
-               w-12 h-12 lg:w-14 lg:h-14 rounded-full
-               bg-white/25 hover:bg-white/40 backdrop-blur
-               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
-        aria-label="Ver próximo card">
-        <img src="./clients/flecha_direita.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
-      </button>
-
-    </div>
-  </div>
-</section>
-
-<!-- utilitários locais -->
-<style>
-  /* esconde a barra de rolagem (Firefox + WebKit) */
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-</style>
-
-<script>
-(() => {
-  const rail = document.getElementById('clientsRail');
-  const prev = document.getElementById('clientsPrev');
-  const next = document.getElementById('clientsNext');
-
-  function getStep() {
-    const cards = rail.querySelectorAll('.client-card');
-    if (!cards.length) return 0;
-    if (cards.length === 1) return cards[0].offsetWidth;
-    // distância exata entre o 2º e o 1º card (inclui gap real)
-    return Math.round(cards[1].offsetLeft - cards[0].offsetLeft);
-  }
-
-  let STEP = getStep();
-
-  // Recalcula em mudanças de layout
-  const recalc = () => { STEP = getStep(); };
-  window.addEventListener('resize', recalc);
-  window.addEventListener('load', recalc);
-  document.fonts?.ready?.then(recalc).catch(() => {});
-
-  // botões
-  prev?.addEventListener('click', () => {
-    rail.scrollBy({ left: -STEP, behavior: 'smooth' });
-  });
-  next?.addEventListener('click', () => {
-    rail.scrollBy({ left: STEP, behavior: 'smooth' });
-  });
-
-  // scroll do mouse (vertical -> horizontal) mantendo snap
-  rail.addEventListener('wheel', (e) => {
-    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-      e.preventDefault();
-      rail.scrollBy({ left: e.deltaY, behavior: 'smooth' });
-    }
-  }, { passive: false });
-})();
-</script>
-
-
-
+    </section>
 
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- PARTNERS / Principais Parceiros (bg branco) -->
-<section id="partners" class="w-full bg-white">
-  <div class="mx-auto w-full max-w-[1440px] px-[10px]">
-    <div class="py-16 md:py-20">
+    <section id="partners" class="w-full bg-white">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px]">
+        <div class="py-16 md:py-20">
 
-      <!-- Título -->
-      <h2 class="font-inter font-bold text-[28px] md:text-[36px] leading-tight text-[#7A34F3]
-                 text-center md:text-left mb-10">
-        Principais Parceiros
-      </h2>
+          <!-- Título -->
+          <h2 class="font-inter font-bold text-[28px] md:text-[36px] leading-tight text-[#7A34F3]
+                    text-center md:text-left mb-10">
+            Principais Parceiros
+          </h2>
 
-      <!-- Faixa de logos -->
-      <ul
-        class="mx-auto w-full max-w-[1200px]
-               grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3
-               place-items-center gap-x-8 gap-y-10"
-        aria-label="Logotipos de parceiros"
-      >
-        <!-- LabLivre -->
-        <li>
-          <a href="https://lablivre.exemplo" target="_blank" rel="noopener noreferrer"
-             class="group inline-block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50">
-            <img
-              src="./partners/lablivre.svg"
-              alt="Lab Livre — visitar site"
-              class="block select-none pointer-events-none
-                     h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain
-                     grayscale opacity-90 transform-gpu
-                     transition-transform transition-opacity duration-300 ease-out
-                     group-hover:opacity-100 group-hover:grayscale-0
-                     group-hover:scale-[1.05] group-hover:-translate-y-0.5
-                     group-hover:drop-shadow-[0_6px_16px_rgba(122,52,243,0.18)]"
-              loading="lazy" decoding="async"
-            />
-          </a>
-        </li>
+          <!-- Faixa de logos -->
+          <ul
+            class="mx-auto w-full max-w-[1200px]
+                  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3
+                  place-items-center gap-x-8 gap-y-10"
+            aria-label="Logotipos de parceiros"
+          >
+            <!-- LabLivre -->
+            <li>
+              <a href="https://lablivre.exemplo" target="_blank" rel="noopener noreferrer"
+                class="group inline-block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50">
+                <img
+                  src="home/partners/lablivre.svg"
+                  alt="Lab Livre — visitar site"
+                  class="block select-none pointer-events-none
+                        h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain
+                        grayscale opacity-90 transform-gpu
+                        transition-transform transition-opacity duration-300 ease-out
+                        group-hover:opacity-100 group-hover:grayscale-0
+                        group-hover:scale-[1.05] group-hover:-translate-y-0.5
+                        group-hover:drop-shadow-[0_6px_16px_rgba(122,52,243,0.18)]"
+                  loading="lazy" decoding="async"
+                />
+              </a>
+            </li>
 
-        <!-- UnB -->
-        <li>
-          <a href="https://unb.br" target="_blank" rel="noopener noreferrer"
-             class="group inline-block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50">
-            <img
-              src="./partners/unb.svg"
-              alt="Universidade de Brasília (UnB) — visitar site"
-              class="block select-none pointer-events-none
-                     h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain
-                     grayscale opacity-90 transform-gpu
-                     transition-transform transition-opacity duration-300 ease-out
-                     group-hover:opacity-100 group-hover:grayscale-0
-                     group-hover:scale-[1.05] group-hover:-translate-y-0.5
-                     group-hover:drop-shadow-[0_6px_16px_rgba(122,52,243,0.18)]"
-              loading="lazy" decoding="async"
-            />
-          </a>
-        </li>
+            <!-- UnB -->
+            <li>
+              <a href="https://unb.br" target="_blank" rel="noopener noreferrer"
+                class="group inline-block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50">
+                <img
+                  src="home/partners/unb.svg"
+                  alt="Universidade de Brasília (UnB) — visitar site"
+                  class="block select-none pointer-events-none
+                        h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain
+                        grayscale opacity-90 transform-gpu
+                        transition-transform transition-opacity duration-300 ease-out
+                        group-hover:opacity-100 group-hover:grayscale-0
+                        group-hover:scale-[1.05] group-hover:-translate-y-0.5
+                        group-hover:drop-shadow-[0_6px_16px_rgba(122,52,243,0.18)]"
+                  loading="lazy" decoding="async"
+                />
+              </a>
+            </li>
 
-        <!-- Ipea (centralizado no mobile na linha dele) -->
-        <li class="col-span-2 sm:col-span-1 flex justify-center">
-          <a href="https://www.ipea.gov.br" target="_blank" rel="noopener noreferrer"
-             class="group inline-block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50">
-            <img
-              src="./partners/ipea.svg"
-              alt="Instituto de Pesquisa Econômica Aplicada (Ipea) — visitar site"
-              class="block select-none pointer-events-none
-                     h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain
-                     grayscale opacity-90 transform-gpu
-                     transition-transform transition-opacity duration-300 ease-out
-                     group-hover:opacity-100 group-hover:grayscale-0
-                     group-hover:scale-[1.05] group-hover:-translate-y-0.5
-                     group-hover:drop-shadow-[0_6px_16px_rgba(122,52,243,0.18)]"
-              loading="lazy" decoding="async"
-            />
-          </a>
-        </li>
-      </ul>
+            <!-- Ipea (centralizado no mobile na linha dele) -->
+            <li class="col-span-2 sm:col-span-1 flex justify-center">
+              <a href="https://www.ipea.gov.br" target="_blank" rel="noopener noreferrer"
+                class="group inline-block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50">
+                <img
+                  src="home/partners/ipea.svg"
+                  alt="Instituto de Pesquisa Econômica Aplicada (Ipea) — visitar site"
+                  class="block select-none pointer-events-none
+                        h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain
+                        grayscale opacity-90 transform-gpu
+                        transition-transform transition-opacity duration-300 ease-out
+                        group-hover:opacity-100 group-hover:grayscale-0
+                        group-hover:scale-[1.05] group-hover:-translate-y-0.5
+                        group-hover:drop-shadow-[0_6px_16px_rgba(122,52,243,0.18)]"
+                  loading="lazy" decoding="async"
+                />
+              </a>
+            </li>
+          </ul>
 
-    </div>
-  </div>
-</section>
-
-
-
+        </div>
+      </div>
+    </section>
 
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -802,7 +719,7 @@
           <!-- Imagem desktop (colada embaixo à esquerda) -->
           <div class="col-span-12 md:col-span-5 hidden md:flex justify-start self-end">
             <img
-              src="./ebook/ebooks.svg"
+              src="home/ebook/ebooks.svg"
               alt="Capas ilustradas do e-book Gov Hub 2025"
               class="block select-none pointer-events-none 
                     h-full w-auto object-contain object-left"
@@ -844,7 +761,7 @@
             <!-- Imagem mobile (abaixo do botão, centralizada e colada embaixo) -->
             <div class="mt-8 flex md:hidden justify-center">
               <img
-                src="./ebook/ebooks.svg"
+                src="home/ebook/ebooks.svg"
                 alt="Capas ilustradas do e-book Gov Hub 2025"
                 class="block select-none pointer-events-none
                       w-full max-w-[520px] h-auto object-contain
@@ -861,154 +778,146 @@
 
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
 
-<!-- PUBLICAÇÕES EM DESTAQUE -->
-<section id="featured-posts" class="w-full bg-white">
-  <div class="mx-auto w-full max-w-[1440px] px-[10px] py-12 md:py-16">
-    <!-- Header -->
-    <header class="max-w-[760px]">
-      <h2 class="font-inter font-extrabold text-[28px] md:text-[36px] leading-tight text-[#7A34F3]">
-        Publicações em destaque
-      </h2>
-      <p class="mt-3 text-[14px] md:text-[16px] leading-[22px] md:leading-[24px] text-black/70">
-        [Breve texto descritivo sobre o tema] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        sem nisl, efficitur vitae magna vel, efficitur rhoncus urna. Aliquam efficitur iaculis ex, a mollis
-        mi ornare a.
-      </p>
-    </header>
+    <!-- PUBLICAÇÕES EM DESTAQUE -->
+    <section id="featured-posts" class="w-full bg-white">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-12 md:py-16">
+        <!-- Header -->
+        <header class="max-w-[760px]">
+          <h2 class="font-inter font-extrabold text-[28px] md:text-[36px] leading-tight text-[#7A34F3]">
+            Publicações em destaque
+          </h2>
+          <p class="mt-3 text-[14px] md:text-[16px] leading-[22px] md:leading-[24px] text-black/70">
+            [Breve texto descritivo sobre o tema] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            sem nisl, efficitur vitae magna vel, efficitur rhoncus urna. Aliquam efficitur iaculis ex, a mollis
+            mi ornare a.
+          </p>
+        </header>
 
-    <!-- Grid de cards -->
-    <ul
-      class="mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-      aria-label="Lista de publicações em destaque"
-    >
-      <!-- Card 1 -->
-      <li>
-        <a href="#"
-           class="group block rounded-2xl overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)]
-                  transform-gpu transition duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/40">
-          <!-- cover -->
-          <div class="relative">
-            <img src="./blog/cover.svg" alt="Capa da publicação 1"
-                 class="block w-full h-[180px] sm:h-[200px] object-cover select-none" loading="lazy" decoding="async"/>
-            <!-- badge -->
-            <span class="absolute bottom-3 left-3 inline-flex items-center px-2.5 py-1 rounded-md
-                         text-[11px] font-semibold tracking-wide bg-[#7A34F3] text-white">
-              CATEGORIA
-            </span>
-          </div>
+        <!-- Grid de cards -->
+        <ul
+          class="mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          aria-label="Lista de publicações em destaque"
+        >
+          <!-- Card 1 -->
+          <li>
+            <a href="#"
+              class="group block rounded-2xl overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)]
+                      transform-gpu transition duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/40">
+              <!-- cover -->
+              <div class="relative">
+                <img src="home/blog/cover.svg" alt="Capa da publicação 1"
+                    class="block w-full h-[180px] sm:h-[200px] object-cover select-none" loading="lazy" decoding="async"/>
+                <!-- badge -->
+                <span class="absolute bottom-3 left-3 inline-flex items-center px-2.5 py-1 rounded-md
+                            text-[11px] font-semibold tracking-wide bg-[#7A34F3] text-white">
+                  CATEGORIA
+                </span>
+              </div>
 
-          <!-- content -->
-          <div class="px-5 py-4">
-            <h3 class="font-inter font-semibold text-[15px] md:text-[16px] leading-[1.3] text-[#031E21]">
-              Título da matéria ou nome da pessoa
-            </h3>
-            <p class="mt-2 text-[13px] md:text-[14px] leading-[20px] text-black/70">
-              Legenda da matéria de duas linhas no máximo para ser apenas introdutório
-            </p>
+              <!-- content -->
+              <div class="px-5 py-4">
+                <h3 class="font-inter font-semibold text-[15px] md:text-[16px] leading-[1.3] text-[#031E21]">
+                  Título da matéria ou nome da pessoa
+                </h3>
+                <p class="mt-2 text-[13px] md:text-[14px] leading-[20px] text-black/70">
+                  Legenda da matéria de duas linhas no máximo para ser apenas introdutório
+                </p>
 
-            <!-- footer -->
-            <div class="mt-4 flex items-center justify-between">
-              <span class="text-[12px] text-black/60">Leia mais</span>
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#7A34F3]/10
-                           transition group-hover:bg-[#7A34F3]/20">
-                <svg class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
-                     viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M7.293 15.707a1 1 0 010-1.414L11.586 10 7.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
+                <!-- footer -->
+                <div class="mt-4 flex items-center justify-between">
+                  <span class="text-[12px] text-black/60">Leia mais</span>
+                  <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#7A34F3]/10
+                              transition group-hover:bg-[#7A34F3]/20">
+                    <svg class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                        viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M7.293 15.707a1 1 0 010-1.414L11.586 10 7.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
 
-      <!-- Card 2 -->
-      <li>
-        <a href="#"
-           class="group block rounded-2xl overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)]
-                  transform-gpu transition duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/40">
-          <div class="relative">
-            <img src="./blog/cover.svg" alt="Capa da publicação 2"
-                 class="block w-full h-[180px] sm:h-[200px] object-cover select-none" loading="lazy" decoding="async"/>
-            <span class="absolute bottom-3 left-3 inline-flex items-center px-2.5 py-1 rounded-md
-                         text-[11px] font-semibold tracking-wide bg-[#7A34F3] text-white">
-              CATEGORIA
-            </span>
-          </div>
-          <div class="px-5 py-4">
-            <h3 class="font-inter font-semibold text-[15px] md:text-[16px] leading-[1.3] text-[#031E21]">
-              Título da matéria ou nome da pessoa
-            </h3>
-            <p class="mt-2 text-[13px] md:text-[14px] leading-[20px] text-black/70">
-              Legenda da matéria de duas linhas no máximo para ser apenas introdutório
-            </p>
-            <div class="mt-4 flex items-center justify-between">
-              <span class="text-[12px] text-black/60">Leia mais</span>
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#7A34F3]/10
-                           transition group-hover:bg-[#7A34F3]/20">
-                <svg class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
-                     viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M7.293 15.707a1 1 0 010-1.414L11.586 10 7.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
+          <!-- Card 2 -->
+          <li>
+            <a href="#"
+              class="group block rounded-2xl overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)]
+                      transform-gpu transition duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/40">
+              <div class="relative">
+                <img src="home/blog/cover.svg" alt="Capa da publicação 2"
+                    class="block w-full h-[180px] sm:h-[200px] object-cover select-none" loading="lazy" decoding="async"/>
+                <span class="absolute bottom-3 left-3 inline-flex items-center px-2.5 py-1 rounded-md
+                            text-[11px] font-semibold tracking-wide bg-[#7A34F3] text-white">
+                  CATEGORIA
+                </span>
+              </div>
+              <div class="px-5 py-4">
+                <h3 class="font-inter font-semibold text-[15px] md:text-[16px] leading-[1.3] text-[#031E21]">
+                  Título da matéria ou nome da pessoa
+                </h3>
+                <p class="mt-2 text-[13px] md:text-[14px] leading-[20px] text-black/70">
+                  Legenda da matéria de duas linhas no máximo para ser apenas introdutório
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <span class="text-[12px] text-black/60">Leia mais</span>
+                  <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#7A34F3]/10
+                              transition group-hover:bg-[#7A34F3]/20">
+                    <svg class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                        viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M7.293 15.707a1 1 0 010-1.414L11.586 10 7.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
 
-      <!-- Card 3 -->
-      <li>
-        <a href="#"
-           class="group block rounded-2xl overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)]
-                  transform-gpu transition duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/40">
-          <div class="relative">
-            <img src="./blog/cover.svg" alt="Capa da publicação 3"
-                 class="block w-full h-[180px] sm:h-[200px] object-cover select-none" loading="lazy" decoding="async"/>
-            <span class="absolute bottom-3 left-3 inline-flex items-center px-2.5 py-1 rounded-md
-                         text-[11px] font-semibold tracking-wide bg-[#7A34F3] text-white">
-              CATEGORIA
-            </span>
-          </div>
-          <div class="px-5 py-4">
-            <h3 class="font-inter font-semibold text-[15px] md:text-[16px] leading-[1.3] text-[#031E21]">
-              Título da matéria ou nome da pessoa
-            </h3>
-            <p class="mt-2 text-[13px] md:text-[14px] leading-[20px] text-black/70">
-              Legenda da matéria de duas linhas no máximo para ser apenas introdutório
-            </p>
-            <div class="mt-4 flex items-center justify-between">
-              <span class="text-[12px] text-black/60">Leia mais</span>
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#7A34F3]/10
-                           transition group-hover:bg-[#7A34F3]/20">
-                <svg class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
-                     viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M7.293 15.707a1 1 0 010-1.414L11.586 10 7.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-    </ul>
+          <!-- Card 3 -->
+          <li>
+            <a href="#"
+              class="group block rounded-2xl overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)]
+                      transform-gpu transition duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/40">
+              <div class="relative">
+                <img src="home/blog/cover.svg" alt="Capa da publicação 3"
+                    class="block w-full h-[180px] sm:h-[200px] object-cover select-none" loading="lazy" decoding="async"/>
+                <span class="absolute bottom-3 left-3 inline-flex items-center px-2.5 py-1 rounded-md
+                            text-[11px] font-semibold tracking-wide bg-[#7A34F3] text-white">
+                  CATEGORIA
+                </span>
+              </div>
+              <div class="px-5 py-4">
+                <h3 class="font-inter font-semibold text-[15px] md:text-[16px] leading-[1.3] text-[#031E21]">
+                  Título da matéria ou nome da pessoa
+                </h3>
+                <p class="mt-2 text-[13px] md:text-[14px] leading-[20px] text-black/70">
+                  Legenda da matéria de duas linhas no máximo para ser apenas introdutório
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <span class="text-[12px] text-black/60">Leia mais</span>
+                  <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#7A34F3]/10
+                              transition group-hover:bg-[#7A34F3]/20">
+                    <svg class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                        viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M7.293 15.707a1 1 0 010-1.414L11.586 10 7.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
 
-    <!-- CTA -->
-    <div class="mt-10 flex justify-center">
-      <a href="#"
-         class="inline-flex items-center justify-center w-[210px] px-5 py-2.5 rounded-lg
-                bg-[#7A34F3] text-white text-sm font-bold shadow-[0_6px_16px_rgba(0,0,0,.18)]
-                hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/40">
-        VEJA MAIS PUBLICAÇÕES
-      </a>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
+        <!-- CTA -->
+        <div class="mt-10 flex justify-center">
+          <a href="#"
+            class="inline-flex items-center justify-center w-[210px] px-5 py-2.5 rounded-lg
+                    bg-[#7A34F3] text-white text-sm font-bold shadow-[0_6px_16px_rgba(0,0,0,.18)]
+                    hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/40">
+            VEJA MAIS PUBLICAÇÕES
+          </a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -1062,101 +971,6 @@
   </footer>
 
   <!-- Scripts -->
-  <!-- Script: toggle do menu mobile, overlay, Esc, clique fora e sombra ao rolar -->
-  <script>
-    const btn = document.getElementById('navToggle');
-    const overlay = document.getElementById('menuOverlay');
-    const panel = document.getElementById('mobilePanel');
-    const iconMenu = document.getElementById('iconMenu');
-    const iconClose = document.getElementById('iconClose');
-    const nav = document.getElementById('siteNav');
-
-    function openMenu() {
-      btn.setAttribute('aria-expanded', 'true');
-      overlay.classList.remove('hidden');
-      panel.classList.remove('hidden');
-      iconMenu.classList.add('hidden');
-      iconClose.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // scroll lock
-    }
-    function closeMenu() {
-      btn.setAttribute('aria-expanded', 'false');
-      overlay.classList.add('hidden');
-      panel.classList.add('hidden');
-      iconMenu.classList.remove('hidden');
-      iconClose.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    btn?.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      expanded ? closeMenu() : openMenu();
-    });
-
-    overlay?.addEventListener('click', closeMenu);
-
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
-    });
-
-    panel?.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', closeMenu);
-    });
-
-    // Sombra ao rolar
-    const onScroll = () => {
-      if (window.scrollY > 2) nav.classList.add('shadow-md');
-      else nav.classList.remove('shadow-md');
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  </script>
-
-  <!-- Script local da hero: alterna a imagem com crossfade e gerencia estado dos botões -->
-  <script>
-    (function () {
-      const scope = document.getElementById('hero');
-      if (!scope) return;
-
-      const imgA = scope.querySelector('#heroVizA');
-      const imgB = scope.querySelector('#heroVizB');
-      const tabs = Array.from(scope.querySelectorAll('[data-hero-tab]'));
-      if (!imgA || !imgB || !tabs.length) return;
-
-      let showing = 'A'; // imagem atualmente visível (A ou B)
-
-      function setActive(btn) {
-        tabs.forEach(b => {
-          b.classList.remove('ring-2', 'ring-[#7A34F3]', 'font-bold');
-          b.setAttribute('aria-selected', 'false');
-        });
-        btn.classList.add('ring-2', 'ring-[#7A34F3]', 'font-bold');
-        btn.setAttribute('aria-selected', 'true');
-      }
-
-      function crossfadeTo(src) {
-        const showEl = (showing === 'A') ? imgA : imgB;
-        const hideEl = (showing === 'A') ? imgB : imgA;
-
-        hideEl.onload = () => {
-          hideEl.classList.remove('opacity-0');
-          showEl.classList.add('opacity-0');
-          showing = (showing === 'A') ? 'B' : 'A';
-        };
-
-        if (hideEl.src !== src) hideEl.src = src;
-        else hideEl.onload?.(); // força o fade se o arquivo for o mesmo (cache)
-      }
-
-      tabs.forEach(btn => {
-        btn.addEventListener('click', () => {
-          setActive(btn);
-          const src = btn.getAttribute('data-src');
-          if (src) crossfadeTo(src);
-        });
-      });
-    })();
-  </script>
 
 </body>
 </html>
