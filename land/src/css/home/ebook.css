@@ -1,0 +1,6 @@
+@layer components {
+  /* Fundo: cola no rodapé da seção */
+  #ebook .ebook-bg {
+    background: url('/ebook/bg.svg') center bottom / cover no-repeat #F19F42;
+  }
+}

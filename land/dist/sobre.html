@@ -9,49 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
   <!-- Inter 400, 600, 700 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    .font-inter { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, 'Noto Sans', 'Helvetica Neue', sans-serif; }
-
-    /* underline animado (desktop) */
-    .link-underline { position: relative; }
-    .link-underline::after {
-      content: ""; position: absolute; left: 0; bottom: -4px;
-      width: 0; height: 2px; background: rgba(255,255,255,.9);
-      transition: width .2s ease;
-    }
-    .link-underline:hover::after,
-    .link-underline:focus-visible::after { width: 100%; }
-
-    /* transições suaves */
-    .t { transition: all .2s ease; }
-
-    @media (min-width: 1024px) {
-    /* deslocamento horizontal da imagem (desktop) */
-    .hero-img-shift {
-      transform: translateX(var(--hero-img-x, 85px));
-    }
-    /* posição e altura do painel (desktop) */
-    .hero-panel-pos {
-      position: absolute;
-      left: var(--hero-panel-left, 850px);
-      bottom: var(--hero-panel-bottom, 0px);
-      height: 434px;
-    }
-  }
-  /* Fundo: cola no rodapé da seção */
-#ebook .ebook-bg{
-  background: url('ebook/bg.svg') center bottom / cover no-repeat #F19F42;
-}
-
-  </style>
-  <script type="module" crossorigin src="./assets/main-D2WBorV4.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BwNgwSgo.css">
+  <script type="module" crossorigin src="./assets/main-BbUsACxa.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-C0kCxC2l.css">
 </head>
+
 <body class="min-h-screen flex flex-col">
 
   <!-- HEADER -->
@@ -69,7 +35,7 @@
           aria-label="GovHub – Início"
         >
           <img
-            src="./hero/logos/logo.svg"
+            src="/hero/logos/logo.svg"
             alt="GovHub"
             class="block w-[165px] h-[40px] select-none"
           />
@@ -139,7 +105,7 @@
                    hover:scale-110 hover:opacity-90 focus:outline-none
                    focus:ring-2 focus:ring-white/50 rounded"
           >
-            <img src="./hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
+            <img src="/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
           </a>
           <a
             href="https://github.com/GovHub-br"
@@ -148,7 +114,7 @@
                    hover:scale-110 hover:opacity-90 focus:outline-none
                    focus:ring-2 focus:ring-white/50 rounded"
           >
-            <img src="./hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
+            <img src="/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
           </a>
 
           <!-- Botão hambúrguer (à direita) -->
@@ -213,14 +179,14 @@
                 aria-label="Instagram"
                 class="inline-flex items-center justify-center w-8 h-8 transition hover:scale-110 hover:opacity-90"
               >
-                <img src="./hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
+                <img src="/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
               </a>
               <a
                 href="https://github.com/GovHub-br"
                 aria-label="GitHub"
                 class="inline-flex items-center justify-center w-8 h-8 transition hover:scale-110 hover:opacity-90"
               >
-                <img src="./hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
+                <img src="/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
               </a>
             </div>
           </div>
@@ -231,7 +197,7 @@
 
   <!-- CONTEÚDO -->
   <main class="flex-1">
-        <p>sobre </p>
+    <p>sobre </p>
 
   </main>
 
@@ -284,102 +250,7 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <!-- Script: toggle do menu mobile, overlay, Esc, clique fora e sombra ao rolar -->
-  <script>
-    const btn = document.getElementById('navToggle');
-    const overlay = document.getElementById('menuOverlay');
-    const panel = document.getElementById('mobilePanel');
-    const iconMenu = document.getElementById('iconMenu');
-    const iconClose = document.getElementById('iconClose');
-    const nav = document.getElementById('siteNav');
+  <!-- Scripts -->
 
-    function openMenu() {
-      btn.setAttribute('aria-expanded', 'true');
-      overlay.classList.remove('hidden');
-      panel.classList.remove('hidden');
-      iconMenu.classList.add('hidden');
-      iconClose.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // scroll lock
-    }
-    function closeMenu() {
-      btn.setAttribute('aria-expanded', 'false');
-      overlay.classList.add('hidden');
-      panel.classList.add('hidden');
-      iconMenu.classList.remove('hidden');
-      iconClose.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    btn?.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      expanded ? closeMenu() : openMenu();
-    });
-
-    overlay?.addEventListener('click', closeMenu);
-
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
-    });
-
-    panel?.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', closeMenu);
-    });
-
-    // Sombra ao rolar
-    const onScroll = () => {
-      if (window.scrollY > 2) nav.classList.add('shadow-md');
-      else nav.classList.remove('shadow-md');
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  </script>
-
-  <!-- Script local da hero: alterna a imagem com crossfade e gerencia estado dos botões -->
-  <script>
-    (function () {
-      const scope = document.getElementById('hero');
-      if (!scope) return;
-
-      const imgA = scope.querySelector('#heroVizA');
-      const imgB = scope.querySelector('#heroVizB');
-      const tabs = Array.from(scope.querySelectorAll('[data-hero-tab]'));
-      if (!imgA || !imgB || !tabs.length) return;
-
-      let showing = 'A'; // imagem atualmente visível (A ou B)
-
-      function setActive(btn) {
-        tabs.forEach(b => {
-          b.classList.remove('ring-2', 'ring-[#7A34F3]', 'font-bold');
-          b.setAttribute('aria-selected', 'false');
-        });
-        btn.classList.add('ring-2', 'ring-[#7A34F3]', 'font-bold');
-        btn.setAttribute('aria-selected', 'true');
-      }
-
-      function crossfadeTo(src) {
-        const showEl = (showing === 'A') ? imgA : imgB;
-        const hideEl = (showing === 'A') ? imgB : imgA;
-
-        hideEl.onload = () => {
-          hideEl.classList.remove('opacity-0');
-          showEl.classList.add('opacity-0');
-          showing = (showing === 'A') ? 'B' : 'A';
-        };
-
-        if (hideEl.src !== src) hideEl.src = src;
-        else hideEl.onload?.(); // força o fade se o arquivo for o mesmo (cache)
-      }
-
-      tabs.forEach(btn => {
-        btn.addEventListener('click', () => {
-          setActive(btn);
-          const src = btn.getAttribute('data-src');
-          if (src) crossfadeTo(src);
-        });
-      });
-    })();
-  </script>
-
 </body>
 </html>

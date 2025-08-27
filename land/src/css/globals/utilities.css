@@ -1,0 +1,8 @@
+@layer utilities {
+  /* transições suaves */
+  .t { transition: all .2s ease; }
+
+  /* esconde a barra de rolagem (Firefox + WebKit) */
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+}

@@ -1,3 +1,16 @@
+/* src/css/style.css */
+
+/* ===== Globais ===== */
+@import "./globals/base.css";
+@import "./globals/components.css";
+@import "./globals/utilities.css";
+
+/* ===== Páginas ===== */
+@import "./home/hero.css";
+@import "./home/ebook.css";
+/* @import "./sobre/sobre.css";  // coloque quando tiver estilos da sobre */
+
+/* Tailwind sempre depois dos imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

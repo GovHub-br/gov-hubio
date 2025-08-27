@@ -1,0 +1,16 @@
+@layer components {
+  @media (min-width: 1024px) {
+    /* deslocamento horizontal da imagem (desktop) */
+    .hero-img-shift {
+      transform: translateX(var(--hero-img-x, 85px));
+    }
+
+    /* posição e altura do painel (desktop) */
+    .hero-panel-pos {
+      position: absolute;
+      left: var(--hero-panel-left, 850px);
+      bottom: var(--hero-panel-bottom, 0px);
+      height: 434px;
+    }
+  }
+}
