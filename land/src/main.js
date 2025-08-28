@@ -5,3 +5,4 @@ import './css/style.css';
 import './js/home/carousel.js';
 import './js/home/navbar-toggle.js';
 import './js/home/hero-crossfade.js';
+import './js/quem-somos/qs-carrossel.js';

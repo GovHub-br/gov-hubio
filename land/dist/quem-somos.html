@@ -9,49 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
   <!-- Inter 400, 600, 700 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    .font-inter { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, 'Noto Sans', 'Helvetica Neue', sans-serif; }
-
-    /* underline animado (desktop) */
-    .link-underline { position: relative; }
-    .link-underline::after {
-      content: ""; position: absolute; left: 0; bottom: -4px;
-      width: 0; height: 2px; background: rgba(255,255,255,.9);
-      transition: width .2s ease;
-    }
-    .link-underline:hover::after,
-    .link-underline:focus-visible::after { width: 100%; }
-
-    /* transições suaves */
-    .t { transition: all .2s ease; }
-
-    @media (min-width: 1024px) {
-    /* deslocamento horizontal da imagem (desktop) */
-    .hero-img-shift {
-      transform: translateX(var(--hero-img-x, 85px));
-    }
-    /* posição e altura do painel (desktop) */
-    .hero-panel-pos {
-      position: absolute;
-      left: var(--hero-panel-left, 850px);
-      bottom: var(--hero-panel-bottom, 0px);
-      height: 434px;
-    }
-  }
-  /* Fundo: cola no rodapé da seção */
-#ebook .ebook-bg{
-  background: url('/ebook/bg.svg') center bottom / cover no-repeat #F19F42;
-}
-
-  </style>
-  <script type="module" crossorigin src="./assets/main-CyGbpvTm.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BcFbrcBL.css">
+  <script type="module" crossorigin src="./assets/main-C-703gE0.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-CLWeNmcE.css">
 </head>
+
 <body class="min-h-screen flex flex-col">
 
   <!-- HEADER -->
@@ -69,7 +35,7 @@
           aria-label="GovHub – Início"
         >
           <img
-            src="/hero/logos/logo.svg"
+            src="home/hero/logos/logo.svg"
             alt="GovHub"
             class="block w-[165px] h-[40px] select-none"
           />
@@ -139,7 +105,7 @@
                    hover:scale-110 hover:opacity-90 focus:outline-none
                    focus:ring-2 focus:ring-white/50 rounded"
           >
-            <img src="/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
+            <img src="home/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
           </a>
           <a
             href="https://github.com/GovHub-br"
@@ -148,7 +114,7 @@
                    hover:scale-110 hover:opacity-90 focus:outline-none
                    focus:ring-2 focus:ring-white/50 rounded"
           >
-            <img src="/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
+            <img src="home/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
           </a>
 
           <!-- Botão hambúrguer (à direita) -->
@@ -213,14 +179,14 @@
                 aria-label="Instagram"
                 class="inline-flex items-center justify-center w-8 h-8 transition hover:scale-110 hover:opacity-90"
               >
-                <img src="/hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
+                <img src="hero/icons/instagram.svg" alt="Instagram" class="block w-8 h-8 select-none" />
               </a>
               <a
                 href="https://github.com/GovHub-br"
                 aria-label="GitHub"
                 class="inline-flex items-center justify-center w-8 h-8 transition hover:scale-110 hover:opacity-90"
               >
-                <img src="/hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
+                <img src="hero/icons/github.svg" alt="GitHub" class="block w-8 h-8 select-none" />
               </a>
             </div>
           </div>
@@ -231,7 +197,342 @@
 
   <!-- CONTEÚDO -->
   <main class="flex-1">
-        <p>quem somos</p>
+
+    <!-- HERO: Quem somos -->
+<section id="quem-somos-hero" class="w-full">
+  <div class="relative overflow-hidden">
+    <!-- BG como IMAGEM (cobre tudo) -->
+    <img
+      src="./quem-somos/hero/bg-quem-somos-hero.svg"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
+      loading="eager" decoding="async"
+    />
+
+    <!-- Conteúdo -->
+    <div class="relative">
+      <div class="mx-auto w-full max-w-[1440px]
+                  h-[240px] sm:h-[300px] md:h-[358px] lg:h-[420px] xl:h-[460px]
+                  px-[10px]">
+        <!-- mobile: centralizado vertical; md+: aplica offsets do Figma -->
+        <div class="h-full flex items-center md:items-start">
+          <h1
+            class="font-inter font-normal text-white leading-[1.05]
+                   text-[32px] sm:text-[44px] md:text-[56px] lg:text-[72px]
+                   md:mt-[100px] md:pl-[0px]"
+          >
+            Quem somos?
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Visão Geral -->
+    <section id="visao-geral" class="w-full bg-white">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-14 md:py-[100px]">
+        <div class="max-w-[920px]">
+          <!-- Título -->
+          <h2 class="font-inter font-bold text-transparent bg-clip-text 
+                    bg-gradient-to-r from-[#7A34F3] to-[#F57F0A]
+                    text-[26px] sm:text-[32px] md:text-[40px] lg:text-[44px] leading-[1.2]">
+            Visão Geral
+          </h2>
+
+          <!-- Parágrafos -->
+          <div class="mt-6 space-y-6">
+            <p class="font-inter text-[15px] sm:text-[16px] md:text-[18px] leading-[1.7] text-[#031E21]/90">
+              O Gov Hub BR é uma iniciativa para enfrentar os desafios da fragmentação, redundância e 
+              inconsistências nos sistemas estruturantes do governo federal. Seu propósito fundamental é 
+              transformar dados públicos em ativos estratégicos e valiosos, promovendo a eficiência 
+              administrativa, a transparência e a confiança pública.
+            </p>
+            <p class="font-inter text-[15px] sm:text-[16px] md:text-[18px] leading-[1.7] text-[#031E21]/90">
+              A iniciativa adota uma abordagem inovadora baseada em evidências, integrando dados de diferentes 
+              sistemas para apoiar gestores públicos na tomada de decisões fundamentadas em análises 
+              quantitativas e qualitativas. Essa perspectiva reduz a dependência de suposições, promovendo uma 
+              gestão mais assertiva e eficaz.
+            </p>
+            <p class="font-inter text-[15px] sm:text-[16px] md:text-[18px] leading-[1.7] text-[#031E21]/90">
+              Ao eliminar barreiras de comunicação entre os sistemas estruturantes e garantir interoperabilidade 
+              por meio dos dados, o projeto oferece uma visão unificada das informações governamentais. A 
+              qualificação e integração de dados não só otimizam processos internos, como também fortalecem a 
+              transparência e a responsabilidade pública, disponibilizando dados organizados tanto para órgãos 
+              públicos quanto para a sociedade civil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Impactos esperados -->
+    <section id="impactos-esperados" class="w-full bg-white">
+      <div class="mx-auto w-full max-w-[1440px] px-[10px] py-14 md:py-[100px]">
+        <div class="max-w-[920px]">
+          <h2 class="font-inter font-bold text-transparent bg-clip-text 
+                      bg-gradient-to-r from-[#7A34F3] to-[#F57F0A]
+                      text-[26px] sm:text-[32px] md:text-[40px] lg:text-[44px] leading-[1.2]">
+            Impactos esperados
+          </h2>
+
+          <div class="mt-6 space-y-6">
+            <p class="font-inter text-[15px] sm:text-[16px] md:text-[18px]
+                      leading-[1.7] text-[#031E21]/90">
+              A qualificação e integração dos dados contribuem diretamente para a redução da fragmentação e
+              das inconsistências nos sistemas estruturantes, permitindo que decisões sejam baseadas em
+              informações concretas e atualizadas. Isso gera um aumento da eficiência administrativa, otimiza o
+              uso de recursos públicos e promove maior agilidade na entrega de serviços governamentais.
+            </p>
+            <p class="font-inter text-[15px] sm:text-[16px] md:text-[18px]
+                      leading-[1.7] text-[#031E21]/90">
+              Além disso, o fortalecimento da transparência e do controle social, por meio da disponibilização
+              de dados organizados e acessíveis, amplia a capacidade de auditoria, fortalece a confiança entre
+              governo e sociedade e contribui para uma gestão pública mais aberta, responsável e confiável.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECTION: Equipe -->
+<section id="equipe" class="w-full bg-[#F7F7F7] py-16 md:py-24 px-[10px]">
+  <div class="mx-auto w-full max-w-[1440px]">
+    <!-- Título + Intro -->
+    <header class="mb-10 md:mb-12">
+      <h2 class="font-inter font-semibold text-[#7A34F3] text-[28px] md:text-[36px] leading-[1]">
+        Equipe
+      </h2>
+      <p class="mt-3 max-w-[720px] text-[#031E21]/80 font-inter text-[14px] md:text-[16px] leading-[1.7]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl, efficitur vitae magna vel,
+        efficitur rhoncus urna. Aliquam efficitur iaculis ex, a mollis mi ornare a.
+      </p>
+    </header>
+
+    <!-- ====== CARROSSEL: UnB ====== -->
+    <div class="space-y-4 md:space-y-6" data-team-carousel>
+      <h3 class="font-inter font-semibold text-[#031E21] text-[18px] md:text-[20px]">UnB</h3>
+
+      <div class="relative">
+        <!-- Botão ESQUERDA -->
+        <button id="teamPrev-1"
+          class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2
+                 -left-24 lg:left-[-112px]
+                 w-12 h-12 lg:w-14 lg:h-14 rounded-full
+                 bg-[#7A34F3]/15 hover:bg-[#7A34F3]/25 backdrop-blur
+                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50"
+          aria-label="Ver card anterior">
+          <img src="home/clients/flecha_esquerda.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
+        </button>
+
+        <!-- Máscara para as setas ficarem fora do trilho -->
+        <div class="overflow-hidden">
+          <!-- Trilho -->
+          <div id="teamRail-1"
+               class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory"
+               aria-live="polite" aria-label="Equipe UnB">
+            <!-- 7 Cards de exemplo -->
+            <!-- CARD -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white
+                        shadow-sm hover:shadow-lg transition-transform duration-300 ease-out
+                        hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva"
+                   class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3">
+                <h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4>
+                <p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p>
+              </div>
+            </div>
+
+            <!-- Duplique mudando nomes se quiser -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3">
+                <h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4>
+                <p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p>
+              </div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3">
+                <h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4>
+                <p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p>
+              </div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3">
+                <h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4>
+                <p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p>
+              </div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3">
+                <h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4>
+                <p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p>
+              </div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3">
+                <h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4>
+                <p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p>
+              </div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3">
+                <h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4>
+                <p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Botão DIREITA -->
+        <button id="teamNext-1"
+          class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2
+                 -right-24 lg:right-[-112px]
+                 w-12 h-12 lg:w-14 lg:h-14 rounded-full
+                 bg-[#7A34F3]/15 hover:bg-[#7A34F3]/25 backdrop-blur
+                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50"
+          aria-label="Ver próximo card">
+          <img src="home/clients/flecha_direita.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
+        </button>
+      </div>
+    </div>
+
+    <!-- ====== CARROSSEL: Ipea ====== -->
+    <div class="mt-12 md:mt-16 space-y-4 md:space-y-6" data-team-carousel>
+      <h3 class="font-inter font-semibold text-[#031E21] text-[18px] md:text-[20px]">Ipea</h3>
+
+      <div class="relative">
+        <button id="teamPrev-2" class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 -left-24 lg:left-[-112px] w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#7A34F3]/15 hover:bg-[#7A34F3]/25 backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50" aria-label="Ver card anterior">
+          <img src="home/clients/flecha_esquerda.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
+        </button>
+
+        <div class="overflow-hidden">
+          <div id="teamRail-2" class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory" aria-live="polite" aria-label="Equipe Ipea">
+            <!-- 7 cards (exatamente o mesmo markup do card acima) -->
+            <!-- Você pode trocar a cor da tarja se desejar -->
+            <!-- Card 1 -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3">
+                <h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4>
+                <p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+            <!-- Card 3 -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+            <!-- Card 4 -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+            <!-- Card 5 -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+            <!-- Card 6 -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+            <!-- Card 7 -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#7A34F3] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+          </div>
+        </div>
+
+        <button id="teamNext-2" class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 -right-24 lg:right-[-112px] w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#7A34F3]/15 hover:bg-[#7A34F3]/25 backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50" aria-label="Ver próximo card">
+          <img src="home/clients/flecha_direita.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
+        </button>
+      </div>
+    </div>
+
+    <!-- ====== CARROSSEL: Capibarí ====== -->
+    <div class="mt-12 md:mt-16 space-y-4 md:space-y-6" data-team-carousel>
+      <h3 class="font-inter font-semibold text-[#031E21] text-[18px] md:text-[20px]">Capibarí</h3>
+
+      <div class="relative">
+        <button id="teamPrev-3" class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 -left-24 lg:left-[-112px] w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#7A34F3]/15 hover:bg-[#7A34F3]/25 backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50" aria-label="Ver card anterior">
+          <img src="home/clients/flecha_esquerda.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
+        </button>
+
+        <div class="overflow-hidden">
+          <div id="teamRail-3" class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory" aria-live="polite" aria-label="Equipe Capibarí">
+            <!-- 7 cards -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#F19F42] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+
+            <!-- Repita 6x -->
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#F19F42] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#F19F42] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#F19F42] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#F19F42] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#F19F42] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+
+            <div class="team-card snap-start w-[268px] rounded-[16px] overflow-hidden flex-shrink-0 bg-white shadow-sm hover:shadow-lg transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-[2px]">
+              <img src="home/clients/ricardo.svg" alt="Ricardo Silva" class="w-full h-[307px] object-cover select-none" draggable="false" />
+              <div class="bg-[#F19F42] text-white p-3"><h4 class="font-inter font-bold text-[16px] leading-[19px]">Ricardo Silva</h4><p class="text-[14px] leading-[20px] opacity-90">Diretor Geral</p></div>
+            </div>
+
+          </div>
+        </div>
+
+        <button id="teamNext-3" class="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 -right-24 lg:right-[-112px] w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#7A34F3]/15 hover:bg-[#7A34F3]/25 backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A34F3]/50" aria-label="Ver próximo card">
+          <img src="home/clients/flecha_direita.svg" alt="" class="w-6 h-6 lg:w-7 lg:h-7" />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
   </main>
 
@@ -284,102 +585,7 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <!-- Script: toggle do menu mobile, overlay, Esc, clique fora e sombra ao rolar -->
-  <script>
-    const btn = document.getElementById('navToggle');
-    const overlay = document.getElementById('menuOverlay');
-    const panel = document.getElementById('mobilePanel');
-    const iconMenu = document.getElementById('iconMenu');
-    const iconClose = document.getElementById('iconClose');
-    const nav = document.getElementById('siteNav');
+  <!-- Scripts -->
 
-    function openMenu() {
-      btn.setAttribute('aria-expanded', 'true');
-      overlay.classList.remove('hidden');
-      panel.classList.remove('hidden');
-      iconMenu.classList.add('hidden');
-      iconClose.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // scroll lock
-    }
-    function closeMenu() {
-      btn.setAttribute('aria-expanded', 'false');
-      overlay.classList.add('hidden');
-      panel.classList.add('hidden');
-      iconMenu.classList.remove('hidden');
-      iconClose.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    btn?.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      expanded ? closeMenu() : openMenu();
-    });
-
-    overlay?.addEventListener('click', closeMenu);
-
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
-    });
-
-    panel?.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', closeMenu);
-    });
-
-    // Sombra ao rolar
-    const onScroll = () => {
-      if (window.scrollY > 2) nav.classList.add('shadow-md');
-      else nav.classList.remove('shadow-md');
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  </script>
-
-  <!-- Script local da hero: alterna a imagem com crossfade e gerencia estado dos botões -->
-  <script>
-    (function () {
-      const scope = document.getElementById('hero');
-      if (!scope) return;
-
-      const imgA = scope.querySelector('#heroVizA');
-      const imgB = scope.querySelector('#heroVizB');
-      const tabs = Array.from(scope.querySelectorAll('[data-hero-tab]'));
-      if (!imgA || !imgB || !tabs.length) return;
-
-      let showing = 'A'; // imagem atualmente visível (A ou B)
-
-      function setActive(btn) {
-        tabs.forEach(b => {
-          b.classList.remove('ring-2', 'ring-[#7A34F3]', 'font-bold');
-          b.setAttribute('aria-selected', 'false');
-        });
-        btn.classList.add('ring-2', 'ring-[#7A34F3]', 'font-bold');
-        btn.setAttribute('aria-selected', 'true');
-      }
-
-      function crossfadeTo(src) {
-        const showEl = (showing === 'A') ? imgA : imgB;
-        const hideEl = (showing === 'A') ? imgB : imgA;
-
-        hideEl.onload = () => {
-          hideEl.classList.remove('opacity-0');
-          showEl.classList.add('opacity-0');
-          showing = (showing === 'A') ? 'B' : 'A';
-        };
-
-        if (hideEl.src !== src) hideEl.src = src;
-        else hideEl.onload?.(); // força o fade se o arquivo for o mesmo (cache)
-      }
-
-      tabs.forEach(btn => {
-        btn.addEventListener('click', () => {
-          setActive(btn);
-          const src = btn.getAttribute('data-src');
-          if (src) crossfadeTo(src);
-        });
-      });
-    })();
-  </script>
-
 </body>
 </html>
